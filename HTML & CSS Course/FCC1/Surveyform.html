@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">GCP Survey form</h1>
+        <p id="description">
+          Thank you for your time to help us improve the platform
+        </p>
+        </header>
+        <form action="/" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required/>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="clue">(Optional)</span></label>
+                <input type="number" class="form-control" id="number" placeholder="Enter your age"/>
+            </div>
+            <div class="form-group">
+                <label for="select">Which option describe your current roll?</label>
+                <select name="select" id="dropdown">
+                    <option value="">Select an Option</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Prefer not to say</option>
+                    <option value="4">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Would you like to suggest GCP Platform to a friend?</label>
+                <label for="user-recommended"><input type="radio" name="user-recommended" id="user-recommended" value="definitely" class="input-radio" checked> Definitely</label>
+                <label for="user-recommended"><input type="radio" name="user-recommended" id="user-recommended" value="maybe" class="input-radio" checked> Maybe</label>
+                <label for="user-recommended"><input type="radio" name="user-recommended" id="user-recommended" value="no" class="input-radio" checked> No</label>
+            </div>
+            <div class="form-group">
+                <label for="fav-feature">Which are your favorite feature in GCP?</label>
+                <select name="fav-feature" id="dropdown">
+                    <option value="">Select an Option</option>
+                    <option value="1">API Management</option>
+                    <option value="2">Live Chat</option>
+                    <option value="3">Machine Learning</option>
+                    <option value="4">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">What would you like to see improved <span class="clue">(Check all that apply)</span></label>
+                <label for="feature-1"><input type="checkbox" name="feature-1" id="feature-1" value="1" class="input-checkbox" > API Management</label>
+                <label for="feature-2"><input type="checkbox" name="feature-2" id="feature-2" value="2" class="input-checkbox" > Live Chat</label>
+                <label for="feature-3"><input type="checkbox" name="feature-3" id="feature-3" value="3" class="input-checkbox" > Machine Learning</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Any comment or suggestion?</span></label>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here..." class="comment-area"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit" class="submit" name="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+  </body>
+</html>
